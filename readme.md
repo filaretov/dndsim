@@ -14,9 +14,10 @@ there a DM appreciation day? I feel like there should be an international DM app
 - Factions
   - want: districts
   - have: resources
-  - exhibit: behaviour, preferences (allies and enemies)
+  - exhibit: behaviour (aggressive expansion, castling, neutralizing), preferences (allies and enemies)
 - Districts
-  - contain: poi
+  - contain: poi (temples, courthouse, businesses, infrastructure)
+  - have: crime rates, population density, etc (these might be abstracted away)
   - generate: resources
 - Resources
   - law
@@ -44,6 +45,13 @@ Scouting means increasing the amount of influence that can be spent in one tick 
 Alright, so, there's no point in having a grid if there's nothing going on in it.
 
 I'm not ever sure we need `mesa` for this. The complexity comes in later.
+
+### Step
+There'll probably be three steps:
+
+1. Choose targets --- each faction chooses whether to make a move on a district
+2. Make moves --- the moves are executed, conflicts resolved
+3. Generate rewards --- each faction gets the rewards from their districts
 
 ## Our campaign
 In our campaign, there are currently 13 factions and 40 districts.
