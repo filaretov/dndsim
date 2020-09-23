@@ -9,8 +9,7 @@ DM would like to have many factions battling for power in a certain part of the 
 During our session 0, we discussed simulating the behaviour of the factions and letting
 our DM interpret the results into a story, rather than making him plan the actions of 13
 factions across 40 districts every single week (is there a DM appreciation day? I feel
-like there should be an international DM appreciation day (
-[yes](https://gmsday.com/),
+like there should be an international DM appreciation day ([yes](https://gmsday.com/),
 [there is](https://dnd.wizards.com/articles/features/28-ways-appreciate-your-dungeon-master))).
 
 ## Overview
