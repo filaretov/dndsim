@@ -66,3 +66,8 @@ In our campaign, there are currently 13 factions and 40 districts.
 - one of the scouting factions and the investing faction have targeted the same district, but that
   doesn't trigger a conflict, because scouting is not an aggressive move
 - the investing faction does trigger a conflict
+
+## Changelog
+
+### 2020-09-23
+I'm going to abandon `mesa` in favour of my own ABM framework. Mesa has a weird circular dependency in the agents and models --- models hold the information about schedules and agents, but agents also have a reference to the model holding them. That seems a bit weird to me.
