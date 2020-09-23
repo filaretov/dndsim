@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dndsim"
-version = "2020.9.0"
+version = "2020.9.1"
 description = "Simulating the conflicts between factions in a D&D game."
 authors = ["Hristo Filaretov <h.filaretov@campus.tu-berlin.de>"]
 license = "MIT"
