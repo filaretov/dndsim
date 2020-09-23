@@ -3,12 +3,15 @@
 Simulating the conflicts of a city in a D&D 5e game.
 
 ## Goal
-We are playing a campaign in a huge city based on the premise that we are a guild offering services.
-The campaign is more social/political rather than combat-focused. Our DM would like to have many
-factions battling for power in a certain part of the map. During our session 0, we discussed
-simulating the behaviour of the factions and letting our DM interpret the results into a story,
-rather than making him plan the actions of 13 factions across 40 districts every single week (is
-there a DM appreciation day? I feel like there should be an international DM appreciation day).
+We are playing a campaign in a huge city based on the premise that we are a guild
+offering services.  The campaign is more social/political rather than combat-focused. Our
+DM would like to have many factions battling for power in a certain part of the map.
+During our session 0, we discussed simulating the behaviour of the factions and letting
+our DM interpret the results into a story, rather than making him plan the actions of 13
+factions across 40 districts every single week (is there a DM appreciation day? I feel
+like there should be an international DM appreciation day (
+[yes](https://gmsday.com/),
+[there is](https://dnd.wizards.com/articles/features/28-ways-appreciate-your-dungeon-master))).
 
 ## Overview
 - Factions
@@ -52,6 +55,9 @@ There'll probably be three steps:
 1. Choose targets --- each faction chooses whether to make a move on a district
 2. Make moves --- the moves are executed, conflicts resolved
 3. Generate rewards --- each faction gets the rewards from their districts
+
+### Feed
+In order to present a readable feed to the user, callbacks will be used in most step functions.
 
 ## Our campaign
 In our campaign, there are currently 13 factions and 40 districts.
