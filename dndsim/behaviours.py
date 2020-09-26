@@ -1,5 +1,4 @@
-from .district import District
-from .resources import Resources
+from __future__ import annotations
 
 import random
 
@@ -23,3 +22,8 @@ class PreferenceDistrictPicker(Behaviour):
 
     def _weights(self, districts: List[District]) -> List[float]:
         return [sum(pref(d) for pref in self.preferences) for d in districts]
+
+@dataclass
+class RandomDistrictPicker(Behaviour):
+    def pick(self, districts: List[District]) -> District:
+        return random.choice(districts)

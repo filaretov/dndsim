@@ -23,7 +23,6 @@ def coal_district():
 def wheat_faction():
     want_wheat = lambda d: 1 if "wheat" in d else 0
     return FactionAgent(
-        uid=0,
         resources=Resources.ones(),
         behaviour=PreferenceDistrictPicker([want_wheat]),
     )

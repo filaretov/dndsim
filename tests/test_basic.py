@@ -1,8 +1,7 @@
-from dndsim.behaviours import PreferenceDistrictPicker
 import pytest
 
-from dndsim.district import District
-from dndsim.resources import Resources
+from dndsim.behaviours import PreferenceDistrictPicker, RandomDistrictPicker
+from dndsim import FactionAgent, District, Resources
 
 
 @pytest.fixture
@@ -31,6 +30,14 @@ def district():
 def resources():
     return Resources.ones()
 
+@pytest.fixture
+def faction():
+    return FactionAgent(
+        Resources.ones(),
+        RandomDistrictPicker(),
+        name="The Wheat Faction",
+    )
+
 
 def test_district(district):
     """I know, I know, I should test something meaningful."""
@@ -47,9 +54,15 @@ def test_picker(districts, preferences):
     """The _weights method isn't meant for public use, but it's much easier to
     test than the pick method.  pick only samples from the districts using
     stdlib random, so there's not much to test anyway.
-    
+
     TODO: Create a more readable fixture that combines `districts` and `preferences`,
     the [3, 3, 1] weight list is too magic-number-y.
     """
     pdp = PreferenceDistrictPicker(preferences)
     assert pdp._weights(districts) == [3, 3, 1]
+
+
+def test_faction_equality(faction):
+    faction_incr = FactionAgent(faction.resources * 2, RandomDistrictPicker(), faction.name)
+    assert faction == faction_incr
+    assert hash(faction) == hash(faction_incr)

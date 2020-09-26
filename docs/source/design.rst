@@ -83,6 +83,14 @@ There’ll probably be three steps:
 2. Make moves — the moves are executed, conflicts resolved
 3. Generate rewards — each faction gets the rewards from their districts
 
+Factions
+~~~~~~~~~~~~~~~~
+
+Some factions prefer to aggressively take over as many districts as possible. Some factions prefer
+to control very specific districts. Some factions only want to limit the power of an opposing
+faction.
+
+
 Feed
 ~~~~
 

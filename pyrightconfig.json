@@ -1,0 +1,15 @@
+{
+    "include": [
+        "dndsim"
+    ],
+
+    "reportUndefinedVariable": false,
+
+    "executionEnvironments": [
+        {
+            "root": "dndsim",
+            "pythonVersion": "3.8",
+            "pythonPlatform": "Linux"
+        }
+    ]
+}
